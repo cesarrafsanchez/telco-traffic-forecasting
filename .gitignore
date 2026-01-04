@@ -1,0 +1,59 @@
+# --- Entornos Virtuales ---
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Python caché ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Datos y Modelos (Binarios pesados) ---
+# Ignorar cualquier archivo dentro de data/ excepto archivos .gitkeep si los hubiera
+data/raw/*
+data/processed/*
+# Ignorar archivos comprimidos o de datos específicos
+*.csv
+*.xlsx
+*.pkl
+*.parquet
+*.json
+# Exceptuar archivos de configuración necesarios (si los hubiera en el futuro)
+!src/xgb_traffic_model.json
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+# Opcional: ignorar las figuras generadas automáticamente
+*.png
+*.jpg
+*.jpeg
+
+# --- IDEs y Editores ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# --- Variables de entorno y Logs ---
+.env
+.flaskenv
+*.log
